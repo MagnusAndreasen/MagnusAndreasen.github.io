@@ -1,3 +1,5 @@
 module.exports = {
-  publicPath: '/vue-2/'
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/MagnusAndreasen.github.io/'
+    : '/'
 }
